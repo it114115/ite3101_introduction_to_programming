@@ -3,10 +3,11 @@
 ## Codespace
 You can click one the top Codespace icon and you will get a new Codespace. However, if you crash your Codespace, you still need to delete and re-create a new one.
 
-## Read Only for Tests
-If you want to full rebuild the container, you disable the read only files.
+## GitHub Classroom Protected file paths
 ```
-find tests -type f -name "*.py" -exec sudo chattr -i {} \;
+tests/**/*
+.github/**/*
+.devcontainer/**/*
 ```
 
 ## Windows
